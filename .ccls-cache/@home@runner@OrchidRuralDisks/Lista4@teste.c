@@ -1,8 +1,10 @@
 #include <stdio.h>
 int main(){
- int a = 5;
-  int*p = &a;
-  printf("Número = %d",*p);
-  printf("Endereç = %p",p);
+ char c = 'x';
+  int a = 0;
+  printf("Tamanho de c: %ld",sizeof(c));
+  printf("Tamanho de a: %ld",sizeof(a));
+  
+  
   return 0;
 }
