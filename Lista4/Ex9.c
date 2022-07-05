@@ -1,3 +1,4 @@
+// Implemente o m ́etodo de ordena ̧c ̃ao bolha utilizando ponteiros.
 // Ordenar o vetor
 
 #include <stdio.h>
