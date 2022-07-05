@@ -10,7 +10,7 @@ struct Aluno{
 int main(){
   struct Aluno a1;
   printf("Digite o nome do aluno:\n");
-  scanf("%s",a1.nome);
+  scanf("%s",&a1.nome);
   printf("Digite a nota 1:\n");
   scanf("%f",&a1.n1);
   printf("Digite a nota 2:\n");
