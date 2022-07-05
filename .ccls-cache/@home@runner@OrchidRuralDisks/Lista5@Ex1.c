@@ -1,3 +1,4 @@
+// Escreva um programa em C que utilize uma Estrutura aluno para conter duas notas, lidas do usu ́ario, e sua m ́edia.
 #include <stdio.h>
 struct Aluno{
   float n1;
