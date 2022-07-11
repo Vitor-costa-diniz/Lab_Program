@@ -1,24 +1,18 @@
+//Fa ̧ca um programa em C que leia uma string do usu ́ario e informe a quantidade de caracteres da string fornecida. N ̃ao use a fun ̧c ̃ao strlen().
 #include <stdio.h>
-int main(void){
-  int d = 0, cont = 0,*b;
-  char c = 'S';
-  while (c == 'S'){
-    printf("escreva um número:\n"); 
-    scanf("%d",&d);
-    if (cont == 0){
-      b = &d;
+#define TAM 20
+int main() {
+    char palavra[TAM];
+    int tam=0 ,i;
+
+    printf("Digite uma palavra: ");
+    scanf("%s",palavra);
+
+    i = 0;
+    while(palavra[i] != '\0')
+    {
+        i++;
+        tam ++;
     }
-    cont+=1;
-    if (*b > d){
-      b = &d;
-    }
-    printf("O menor valor digitador até agora foi %d\n",*b);
-    printf("O endereço do menor valor ate agora: %p\n",b);
-    printf("Deseja continuar ?: [S/N]\n");
-    scanf(" %c",&c); 
-  }
-  printf("O menor valor digitado foi %d\n",*b);
-  printf("O endereço do menor valor é %p\n",b);
-  printf("O endereço do ponteiro é:%p\n",b);
-  return 0;
+    printf("A palavra tem %d letras \n", tam);
 }
